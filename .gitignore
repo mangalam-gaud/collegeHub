@@ -1,0 +1,78 @@
+# =====================================================================
+# Mangaud CollegeHub - Git ignore rules
+# ---------------------------------------------------------------------
+# This repository holds SOURCE ONLY. Build output, the Tomcat server and
+# the Maven distribution are all local tooling and are recreated on demand
+# by run.bat.
+# =====================================================================
+
+# ---- Build output -----------------------------------------------------
+target/
+*.war
+*.class
+*.jar
+!src/**/*.jar
+
+# ---- Bundled local tooling (run.bat expects these next to the project) --
+apache-tomcat-10.1/
+apache-tomcat*/
+tomcat/
+maven/
+*.zip
+
+# ---- Tomcat runtime artefacts ----------------------------------------
+logs/
+work/
+temp/
+webapps/
+*.log
+*.pid
+catalina.out
+localhost.*.log
+*.out
+
+# ---- IDE / editor -----------------------------------------------------
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+nbproject/
+*.swp
+*~
+
+# ---- OS noise ---------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# ---- Secrets and local config ----------------------------------------
+# Never commit real credentials. DBUtil reads these from the environment.
+.env
+*.env
+*.local
+application-local.properties
+*.pem
+*.key
+!.github/*.md
+
+# ---- Test / scratch output -------------------------------------------
+/c_*.txt
+/ck_*.txt
+/cs*.txt
+/cd1.txt
+cookies*.txt
+*.html.out
+/smoke-*.txt
+/role-*.txt
+!src/main/webapp/**/*.html
+
+# ---- Database dumps (contain data, not schema) ------------------------
+database/backup/
+*.sql.bak
+dump.sql
+
+# ---- Docs that describe local-only paths ------------------------------
+# (no-op, kept for clarity)

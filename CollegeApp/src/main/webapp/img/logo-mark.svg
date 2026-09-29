@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Mangaud">
+  <title>Mangaud</title>
+  <defs>
+    <linearGradient id="fCap" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="fBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+  </defs>
+  <path d="M16 3 L29 9.5 L16 16 L3 9.5 Z" fill="url(#fCap)"/>
+  <path d="M7 14 H25 V26 H7 Z" fill="url(#fBody)"/>
+  <rect x="4" y="24" width="24" height="3.4" rx="1.4" fill="#1e1b4b"/>
+  <path d="M29 9.5 V17" stroke="#f59e0b" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="29" cy="18.6" r="2" fill="#fbbf24"/>
+</svg>

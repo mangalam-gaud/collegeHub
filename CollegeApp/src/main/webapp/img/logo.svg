@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mangaud CollegeHub">
+  <title>Mangaud CollegeHub</title>
+  <defs>
+    <linearGradient id="mgBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="mgCap" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- roof / academic cap peak -->
+  <path d="M32 7 L57 19 L32 31 L7 19 Z" fill="url(#mgCap)"/>
+  <!-- cap band -->
+  <path d="M32 25 L57 13 L57 19 L32 31 Z" fill="#b45309" opacity=".55"/>
+
+  <!-- building body -->
+  <path d="M14 28 H50 V53 H14 Z" fill="url(#mgBody)"/>
+
+  <!-- three pillars: a college, at a glance -->
+  <rect x="19" y="33" width="6" height="14" rx="1.4" fill="#e0e7ff"/>
+  <rect x="29" y="33" width="6" height="14" rx="1.4" fill="#e0e7ff"/>
+  <rect x="39" y="33" width="6" height="14" rx="1.4" fill="#e0e7ff"/>
+
+  <!-- base -->
+  <rect x="10" y="48" width="44" height="5" rx="2" fill="#1e1b4b"/>
+
+  <!-- tassel -->
+  <path d="M57 19 V33" stroke="#f59e0b" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="57" cy="35.5" r="3" fill="#fbbf24"/>
+</svg>
